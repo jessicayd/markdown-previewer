@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.5fa6129b.css","mappings":"AAAA,KACE,iBACF,CAEA,SACE,YACF","sources":["App.css"],"sourcesContent":[".App {\n  text-align: center;\n}\n\n#wrapper {\n  display: flex;\n}"],"names":[],"sourceRoot":""}

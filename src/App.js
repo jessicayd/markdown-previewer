@@ -41,6 +41,8 @@ function App() {
                 id="editor" 
                 value={previewContent}
                 onChange = {e => setPreviewContent(e.target.value)}
+                rows={4} 
+                cols={40}
             />
             <ReactMarkdown id="preview" children={previewContent}></ReactMarkdown>
         </div>

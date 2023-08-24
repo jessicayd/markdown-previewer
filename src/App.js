@@ -3,13 +3,13 @@ import './App.css';
 import { marked } from 'marked';
 
 function App() {
-    const text = `# Welcome to my React Markdown Previewer!
+    const text = `# preview your markdown text!
 
-## This is a sub-heading...
-### And here's some other cool stuff:
+## sub heading
+### sub-sub heading
 
     
-Heres some code, \`<div></div>\`, between 2 backticks.
+code goes between 2 backticks: \`<div></div>\` or
     
 ~~~
 // this is multi-line code:
@@ -22,39 +22,36 @@ function catOrDog(cat, dog) {
 }
 ~~~
 
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+options for text: **bold**, _italic_, **_both_**, ~~cross out~~
 
-There's also [links](https://www.freecodecamp.org), and
-> Block Quotes!
+syntax for [links](https://github.com/jessicayd)
+> block Quotes :)
 
-And if you want to get really crazy, even tables:
+tables:
 
-Wild Header | Crazy Header | Another Header?
+month | day | year
 ------------ | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+july | 14 | 2003
+january | 1 | 2023
 
-- And of course there are lists.
-  - Some are bulleted.
-      - With different indentation levels.
-        - That look like this.
+- here are some lists!
+  - bullet lists
+      - w/ different indentation levels
+        - like this
 
 
-1. And there are numbered lists too.
-1. Use just 1s if you want!
-1. And last but not least, let's not forget embedded images:
+1. also numbered lists too.
+1. (you can just use 1's)
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+add images!
+
+![cute cat](https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png)
 `
 
     const [previewContent, setPreviewContent] = useState(text);
 
     return (
         <div>
-          <header>Markdown Previewer</header>
           <div id="wrapper">
               <textarea 
                   id="editor" 
